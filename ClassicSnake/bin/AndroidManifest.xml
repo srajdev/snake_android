@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zing.snakeclassic"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+	 <uses-sdk android:minSdkVersion="8" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+	
+    <application
+        android:icon="@drawable/icon"
+        android:label="@string/app_name" >
+        <activity
+            android:name="com.zing.snakeclassic.SplashScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.zing.snakeclassic.MenuScreen"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.zing.snakeclassic.GameMode"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.zing.snakeclassic.GameScreen"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.zing.snakeclassic.GameOver"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.zing.snakeclassic.OptionsMenu"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.zing.snakeclassic.OptionDialog"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name="com.zing.snakeclassic.SpeedDialog"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name="com.zing.snakeclassic.UnlockCredit"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zing.snakeclassic.EarnCredit"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zing.snakeclassic.UseCredit"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zing.snakeclassic.UnlockScreen"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zing.snakeclassic.HelpMenu"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zing.snakeclassic.GameplayHelp"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zing.snakeclassic.FAQHelp"
+            android:screenOrientation="portrait" >
+        </activity>
+                <activity
+            android:name="com.zing.snakeclassic.UnlockingHelp"
+            android:screenOrientation="portrait" >
+        </activity>
+                <activity
+            android:name="com.zing.snakeclassic.ScoresScreen"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.flurry.android.FlurryFullscreenTakeoverActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode"
+            android:hardwareAccelerated="false" >
+        </activity>
+    </application>
+
+  
+</manifest>

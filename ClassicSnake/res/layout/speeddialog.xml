@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sd_dialog_bgrd"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/difficulty_classic"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="50dp" >
+
+        <RadioGroup
+            android:id="@+id/sd_radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/sd_radiobtn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@drawable/radio_selector"
+                android:checked="true"
+                android:onClick="onRadioButtonClicked" />
+
+            <RadioButton
+                android:id="@+id/sd_radiobtn2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@drawable/radio_selector"
+                android:onClick="onRadioButtonClicked" />
+
+            <RadioButton
+                android:id="@+id/sd_radiobtn3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@drawable/radio_selector"
+                android:onClick="onRadioButtonClicked" />
+
+            <RadioButton
+                android:id="@+id/sd_radiobtn4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@drawable/radio_selector"
+                android:onClick="onRadioButtonClicked" />
+
+            <RadioButton
+                android:id="@+id/sd_radiobtn5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@drawable/radio_selector"
+                android:onClick="onRadioButtonClicked" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/sd_imgv_go"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/txt_go" >
+    </ImageView>
+
+</LinearLayout>

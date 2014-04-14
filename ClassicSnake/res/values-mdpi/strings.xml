@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ClassicSnake</string>
+    
+    <string name="fb_post_posted">Message posted successfully.</string>
+    <string name="fb_post_error">Sorry! Message could not be posted.</string>
+    
+    <string name="facebookShareBundleKeyName">name</string>
+    <string name="facebookShareBundleKeyLink">link</string>
+    <string name="facebookShareBundleKeyCaption">caption</string>
+    <string name="facebookShareBundleKeyDescription">description</string>
+    <string name="facebookShareBundleKeyPicture">picture</string>
+    <string name="app_header_name">Classic Snake</string>
+    
+</resources>

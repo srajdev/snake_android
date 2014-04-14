@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sc_bgrd_theme_control"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/classic"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/logo" />
+		
+        <TextView
+            android:id="@+id/lstFAQ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@android:color/white"
+            android:cacheColorHint="@android:color/transparent"
+            android:padding="15dp" 
+            android:text="\u2022\tThe friends and global leader board does not load in the Scores menu?\n- Make sure you are connected to the internet to view these scores. It will not load if you are not connected.\n\n\u2022\tCan I change options in the middle of a game in progress?\n- Yes, you can click on pause and go to options and change whatever you like. You can then resume the paused game and the new settings will be active.\n\n\u2022\tCan I close the app and still resume a game?\n- Yes, you can resume a paused game any time. The game is saved even when the app is closed. iOS 4.0 users: You can resume a game even if the app was manually terminated.\n\n\u2022\tAny tips/tricks to succeed at the game?\n- Eat as many green apples as possible, which is possible at faster speeds. However, be careful: at faster speeds it’s harder to control the snake so there is a higher chance of dying."
+                android:textSize="15dp"
+                android:textColor="@android:color/black"
+                android:scrollbars = "vertical"
+               android:lines="20" 
+                android:textStyle="bold">
+        </TextView>
+     
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/score_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+    </FrameLayout>
+
+</RelativeLayout>

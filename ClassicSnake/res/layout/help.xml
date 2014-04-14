@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/help_bgrd_theme_control"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/classic"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/logo" >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/imgViewGameplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:onClick="gameplayHelp"
+            android:src="@drawable/gameplay_help" >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/imgViewFAQ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:onClick="faqHelp"            
+            android:src="@drawable/faq_help" >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/imgViewUnlock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:onClick="unlockingHelp"
+            android:src="@drawable/unlock_items_help" >
+        </ImageView>
+
+     <!--     <ImageView
+            android:id="@+id/imgViewRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:onClick="rateGame"
+            android:src="@drawable/rate_game_help" >
+        </ImageView>
+-->
+        <ImageView
+            android:id="@+id/imgViewBlog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:onClick="blogHelp"
+            android:src="@drawable/blog_help" >
+        </ImageView>
+        
+                <ImageView
+            android:id="@+id/imgViewFacebook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:onClick="facebookPage"
+            android:src="@drawable/facebook_page_help" >
+        </ImageView>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/menu_banner"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </FrameLayout>
+
+</RelativeLayout>

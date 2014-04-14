@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menu_bgrd_theme_control"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/classic"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/logo" >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/imgViewNew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:onClick="startNewGame"
+            android:src="@drawable/snakeclassic_newgame" >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/imgViewResume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:onClick="resumeGame"            
+            android:src="@drawable/resume_transparent" >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/imgViewOptions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:onClick="changeOptions"
+            android:src="@drawable/snakeclassic_options" >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/imgViewScores"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:onClick="viewScore"
+            android:src="@drawable/snakeclassic_scores" >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/imgViewUnlock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:onClick="unlockField"
+            android:src="@drawable/snakeclassic_unlock" >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/imgViewHelp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            android:onClick="helpMenu"
+            android:src="@drawable/help" >
+        </ImageView>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/menu_banner"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </FrameLayout>
+
+</RelativeLayout>
